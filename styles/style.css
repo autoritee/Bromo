@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: #141414;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1, 9rem;
+}
+
+p,
+span,
+label,
+input,
+textarea,
+li {
+  color: #524f4f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+/* Button */
+.btn {
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1.5px solid #141414;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: rgb(0, 0, 0) 0px 3px 5px;
+}
+
+/* Title */
+.section-title {
+  margin: 1rem 0 4rem;
+  font-size: 2rem;
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: grey;
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.pre-title::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: white;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+}
+
+/* Layout */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+/* Logo dan navigation menu */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.logo a {
+  color: #141414;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #141414;
+}
+
+/* Hero Section */
+#hero {
+  height: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+  color: cadetblue;
+}
+
+.hero-right img {
+  width: 90%;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+/* About Section */
+
+#abouts {
+  background-color: whitesmoke;
+  padding: 6rem 0;
+}
+
+.abouts .pre-title {
+  margin: 0 auto;
+}
+
+.abouts-title {
+  text-align: center;
+}
+
+.abouts {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: (itemBorderRadius);
+}
+
+.abouts h4 {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.about-icon {
+  background: cadetblue;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.about-icon svg {
+  fill: black;
+}
+
+/* Picture Section */
+#pictures {
+  padding: (sectionPadding);
+}
+
+.picture {
+  border-radius: (itemBorderRadius);
+  overflow: hidden;
+  border: 1px solid whitesmoke;
+}
+
+.picture-cover {
+  height: 250px;
+}
+
+.picture-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.picture-info {
+  padding: 2rem 1.5rem;
+}
+
+.picture-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.picture h4 {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.picture-title a svg:hover {
+  fill: cadetblue;
+}
+
+.picture-title a svg {
+  transition: 0.2s ease-in-out;
+}
+
+.picture-tags {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.picture-tags div {
+  font-size: 0.9rem;
+  border: 1px solid whitesmoke;
+  padding: 0.4rem 1rem;
+  color: #141414;
+}
